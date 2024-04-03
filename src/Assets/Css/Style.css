@@ -1,0 +1,173 @@
+ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body{ 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	background: hsl(185, 41%, 84%); 
+	font-family: monospace; 
+} 
+
+#root{ 
+	width: 100%; 
+	margin: 10px; 
+} 
+
+.container{ 
+	max-width: 800px; 
+	margin: auto; 
+	margin-top: 100px; 
+	display: grid; 
+	background-color: #fff; 
+	grid-template-columns: 1fr 1fr; 
+	justify-content: center; 
+	align-items: center; 
+	padding: 20px; 
+	border: 1px solid #ccc; 
+	border-radius: 15px; 
+	box-shadow: 10px 10px 5px 0px rgba(109, 95, 95, 0.5); 
+} 
+
+.section1{ 
+	margin-bottom: 15px; 
+} 
+
+.section1 .row{ 
+	width: calc(100% - 50px); 
+	margin: auto; 
+} 
+
+.row p{ 
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+	margin: 5px; 
+	margin-top: 15px; 
+	text-align: left; 
+	position: relative; 
+	font-size: 14px; 
+} 
+
+.row span{ 
+    font-family: "Space Mono", monospace;
+    font-size: 21px;
+    color: hsl(172, 67%, 45%);
+	position: absolute; 
+	padding: 3px 0px 0px 5px; 
+} 
+
+.row input{ 
+	width: calc(100% - 25px); 
+	font-size: 1rem; 
+	padding: 6px 10px; 
+	font-weight: 400; 
+	line-height: 1.5; 
+	color: #495057; 
+    margin-bottom: 15px;
+	outline: none; 
+	background-color: #fff; 
+	background-clip: padding-box; 
+	border: 1px solid #ced4da; 
+	border-radius: 0.25rem; 
+	text-align: right; 
+    font-family: "Space Mono", monospace;
+} 
+
+.row ul{ 
+	padding-inline-start: 0px; 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-gap: 5px; 
+	width: 100%; 
+	margin-top: 0;
+    margin-bottom: 30px;
+} 
+
+.row ul li{ 
+	list-style-type: none; 
+    font-family: "Space Mono", monospace;
+	border: 1px solid #ced4da; 
+	border-radius: 4px; 
+	padding: 10px; 
+	cursor: pointer; 
+	background-color: hsl(183, 100%, 15%); 
+	color: white; 
+	font-size: 15px; 
+	transition: 0.5s background-color ease-in-out; 
+} 
+
+.row ul .select{ 
+	background-color: hsl(172, 67%, 45%); 
+} 
+
+.row ul li:hover{ 
+	background-color: hsl(172, 67%, 45%); 
+} 
+
+.section2{ 
+	margin-top: 10px; 
+	height: 350px; 
+	display: flex; 
+	flex-direction: column; 
+	border: 1px solid #ced4da; 
+	border-radius: 8px; 
+	padding: 20px; 
+	box-sizing: border-box; 
+	background-color: hsl(183, 100%, 15%); 
+	color: white; 
+} 
+
+.reset{ 
+	position: relative; 
+	top: 110px; 
+	padding: 10px; 
+	outline: none; 
+    background-color: hsl(172, 67%, 45%);
+	border: none; 
+	border-radius: 5px; 
+	cursor: pointer; 
+	font-family: "Space Mono", monospace;
+    font-weight: 700;
+	transition: 0.5s all; 
+} 
+
+.reset:hover{ 
+    background-color: hsl(185, 41%, 84%);  
+} 
+
+.section2 .row{ 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+} 
+
+.section2 .row div:last-child{ 
+	font-size: 20px; 
+    font-family: "Space Mono", monospace;
+} 
+
+.section2 .row p:last-child{ 
+	margin: 0px 0px 15px 5px; 
+	font-size: 12px; 
+    font-family: "Space Mono", monospace;
+} 
+
+.section2 .row p:first-child{ 
+	font-size: 16px; 
+    font-family: "Space Mono", monospace;
+} 
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	appearance: none; 
+	margin: 0; /* This is important for Firefox */
+} 
+
+@media only screen and (max-width : 600px){ 
+	.container{ 
+		grid-template-columns : 1fr; 
+	} 
+}
